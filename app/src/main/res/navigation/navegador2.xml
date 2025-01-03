@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegador2"
+    app:startDestination="@id/ccfraginicio">
+
+    <fragment
+        android:id="@+id/ccfraginicio"
+        android:name="com.example.imss.ccfraginicio"
+        android:label="fragment_ccfraginicio"
+        tools:layout="@layout/fragment_ccfraginicio" >
+        <action
+            android:id="@+id/action_ccfraginicio_to_ccfragnss"
+            app:destination="@id/ccfragnss" />
+    </fragment>
+    <fragment
+        android:id="@+id/ccfragnss"
+        android:name="com.example.imss.ccfragnss"
+        android:label="fragment_ccfragnss"
+        tools:layout="@layout/fragment_ccfragnss" >
+        <action
+            android:id="@+id/action_ccfragnss_to_ccfraginicio"
+            app:destination="@id/ccfraginicio" />
+    </fragment>
+</navigation>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegador1"
+    app:startDestination="@id/ncfraginicio">
+
+    <fragment
+        android:id="@+id/ncfraginicio"
+        android:name="com.example.imss.ncfraginicio"
+        android:label="fragment_ncfraginicio"
+        tools:layout="@layout/fragment_ncfraginicio" >
+        <action
+            android:id="@+id/action_ncfraginicio_to_ncfragnss"
+            app:destination="@id/ncfragnss" />
+        <action
+            android:id="@+id/action_ncfraginicio_to_ncfragndh"
+            app:destination="@id/ncfragndh" />
+        <action
+            android:id="@+id/action_ncfraginicio_to_ncfragsc"
+            app:destination="@id/ncfragsc" />
+        <action
+            android:id="@+id/action_ncfraginicio_to_ncfragai"
+            app:destination="@id/ncfragai" />
+        <action
+            android:id="@+id/action_ncfraginicio_to_ncfragsp"
+            app:destination="@id/ncfragsp" />
+        <action
+            android:id="@+id/action_ncfraginicio_to_ncfraguc"
+            app:destination="@id/ncfraguc" />
+    </fragment>
+    <fragment
+        android:id="@+id/ncfragnss"
+        android:name="com.example.imss.ncfragnss"
+        android:label="fragment_ncfragnss"
+        tools:layout="@layout/fragment_ncfragnss" >
+        <action
+            android:id="@+id/action_ncfragnss_to_ncfraginicio"
+            app:destination="@id/ncfraginicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/ncfragndh"
+        android:name="com.example.imss.ncfragndh"
+        android:label="fragment_ncfragndh"
+        tools:layout="@layout/fragment_ncfragndh" >
+        <action
+            android:id="@+id/action_ncfragndh_to_ncfraginicio"
+            app:destination="@id/ncfraginicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/ncfragsc"
+        android:name="com.example.imss.ncfragsc"
+        android:label="fragment_ncfragsc"
+        tools:layout="@layout/fragment_ncfragsc" >
+        <action
+            android:id="@+id/action_ncfragsc_to_ncfraginicio"
+            app:destination="@id/ncfraginicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/ncfragai"
+        android:name="com.example.imss.ncfragai"
+        android:label="fragment_ncfragai"
+        tools:layout="@layout/fragment_ncfragai" >
+        <action
+            android:id="@+id/action_ncfragai_to_ncfraginicio"
+            app:destination="@id/ncfraginicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/ncfragsp"
+        android:name="com.example.imss.ncfragsp"
+        android:label="fragment_ncfragsp"
+        tools:layout="@layout/fragment_ncfragsp" >
+        <action
+            android:id="@+id/action_ncfragsp_to_ncfraginicio"
+            app:destination="@id/ncfraginicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/ncfraguc"
+        android:name="com.example.imss.ncfraguc"
+        android:label="fragment_ncfraguc"
+        tools:layout="@layout/fragment_ncfraguc" >
+        <action
+            android:id="@+id/action_ncfraguc_to_ncfraginicio"
+            app:destination="@id/ncfraginicio" />
+    </fragment>
+</navigation>
