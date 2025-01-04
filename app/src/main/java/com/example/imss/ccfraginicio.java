@@ -82,19 +82,29 @@ public class ccfraginicio extends Fragment implements View.OnClickListener {
         } else if (view.getId() == R.id.btnNSSN2) {
             Navigation.findNavController(view).navigate(R.id.ccfragnss);
         } else if (view.getId() == R.id.btnNDHN2) {
-            //Aun nada
+            Navigation.findNavController(view).navigate(R.id.ccfragndh);
         } else if (view.getId() == R.id.btnSCN2) {
-            //Aun nada
+            Navigation.findNavController(view).navigate(R.id.ccfragsc);
         } else if (view.getId() == R.id.btnSPN2) {
-            //Aun nada
+            Navigation.findNavController(view).navigate(R.id.ccfragsp);
         } else if (view.getId() == R.id.btnAIN2) {
-            //Aun nada
+            Navigation.findNavController(view).navigate(R.id.ccfragai);
         } else if (view.getId() == R.id.btnUCN2) {
-            //Aun nada
+            Navigation.findNavController(view).navigate(R.id.ccfraguc);
         } else if (view.getId() == R.id.btnEmergenciaF1N2) {
-            //Aun nada
+            abrirMarcador("911");
         } else if (view.getId() == R.id.btnGlosarioF1N2) {
-            //Aun nada
+            Intent intentito = new Intent(getActivity(), CcGlosario.class);
+            startActivity(intentito);
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(requireContext().getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(requireContext(), "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }

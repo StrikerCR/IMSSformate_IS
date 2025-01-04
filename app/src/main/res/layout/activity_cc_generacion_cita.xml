@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DCE3DA"
-    android:paddingRight="20dp"
-    tools:context=".ncfraguc">
+    tools:context=".CcGeneracionCita">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="130dp"
@@ -16,14 +18,14 @@
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="20dp"
             android:backgroundTint="@color/white"
             android:padding="12dp"
             android:textColor="@color/black"
             android:textSize="25dp"
             android:textStyle="bold"
             android:text="MENÚ"
-            android:id="@+id/btnMenuF7N1"
+            android:id="@+id/btnMenu23"
             android:drawableLeft="@drawable/menu_icon"/>
         <Button
             android:layout_width="wrap_content"
@@ -32,16 +34,16 @@
             android:backgroundTint="#DFD4BA"
             android:padding="12dp"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             android:text="CUENTA"
-            android:id="@+id/btnCuentaF7N1"
+            android:id="@+id/btnCuenta23"
             android:drawableLeft="@drawable/user_icon"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="10dp"
         android:paddingHorizontal="20dp"
         android:orientation="horizontal"
         android:gravity="center">
@@ -52,124 +54,107 @@
             android:backgroundTint="#DDD3B9"
             android:text="REGRESAR"
             android:textStyle="bold"
-            android:textSize="22dp"
+            android:textSize="25dp"
             android:textColor="@color/black"
             android:drawableLeft="@drawable/back_icon"
             android:padding="12dp"
-            android:id="@+id/btnRetornoF7N1"/>
+            android:id="@+id/btnRetorno23"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:text="ESCUCHA"
-            android:textSize="16dp"
+            android:textSize="14dp"
             android:textStyle="bold"
             android:backgroundTint="#E67694"
             android:textColor="@color/black"
-            android:id="@+id/btnEscucharF7N1"
+            android:id="@+id/btnEscuchar23"
             android:drawableRight="@drawable/listen_icon"
             android:padding="12dp"/>
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="470dp"
-        android:layout_marginTop="220dp">
+        android:layout_height="470dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingVertical="10dp"
             android:orientation="vertical">
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="UBICA TU CLÍNICA"
-                android:textSize="27dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:gravity="center"
-                android:text="¿Quieres buscar una unidad específica del IMSS cerca de ti?\nBusca en el cuadro de [ SELECIONA OPCION ]:\nUna Imagen de la ubicación clínica seleccionada se desplegará debajo."
-                android:textSize="20dp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="Opciones"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-            <Spinner
-                android:layout_width="350dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:id="@+id/spnOpc"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:text="Código Postal"
-                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="GENERACIÓN DE CITA"
                 android:textStyle="bold"
+                android:textSize="25dp"
                 android:textColor="@color/black"/>
             <TextView
-                android:layout_width="350dp"
+                android:layout_width="400dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/edtext_background"
-                android:paddingVertical="12dp"
-                android:hint="CODIGO POSTAL"
                 android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="22dp"
-                android:id="@+id/txtVCP"/>
+                android:text="Documentación que ocuparás:"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="* CURP"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="* Correro electrónico"
+                android:textSize="22dp"/>
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="Dirección"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@drawable/edtext_background"
-                android:paddingVertical="12dp"
-                android:hint="DIRECCIÓN"
                 android:gravity="center"
-                android:textSize="20dp"
-                android:id="@+id/txtVDir"/>
+                android:text="Tendrás que usar la página de lgobierno, aquí te enseñaremos como:"
+                android:textSize="22dp"/>
             <ImageView
-                android:layout_width="350dp"
-                android:layout_height="220dp"
+                android:layout_width="320dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:id="@+id/imgMapa"
-                android:visibility="gone"/>
+                android:id="@+id/googleplayAppImss1"
+                android:src="@drawable/imssdigital"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="La descargas en la play store que tiene el siguiente icono"
+                    android:textSize="22dp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/googleplayAppImss2"
+                    android:src="@drawable/googleplay"/>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:layout_marginTop="696dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:background="#536152"
-        android:gravity="center_horizontal">
+        android:gravity="center">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="65dp"
-            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:backgroundTint="#E6CFA0"
             android:padding="12dp"
@@ -177,18 +162,17 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="EMERGENCIA"
-            android:id="@+id/btnEmergenciaF7N1"
+            android:id="@+id/btnEmergencia23"
             android:drawableLeft="@drawable/call_icon"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="65dp"
-            android:layout_marginTop="10dp"
             android:backgroundTint="#DFD4BA"
             android:padding="12dp"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="GLOSARIO"
-            android:id="@+id/btnGlosarioF7N1"/>
+            android:id="@+id/btnGlosario23"/>
     </LinearLayout>
-</FrameLayout>
+</LinearLayout>

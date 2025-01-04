@@ -16,7 +16,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class CcCuenta extends AppCompatActivity implements View.OnClickListener {
-    Button btnMenu17, btnCuenta17, btnRetorno17, btnEscuchar17, btnHC, btnEV, btnCC, btnGC, btnEmergencia4, btnGlosario4;
+    Button btnMenu17, btnCuenta17, btnRetorno17, btnEscuchar17, btnHC, btnEV, btnCC, btnGC, btnR, btnEmergencia4, btnGlosario4;
     TextView txtVCNom, txtVCNSS, txtVCCURP, txtVCNumFam, txtVCNumFam2;
     int userId, verNumFam2;
     @Override
@@ -48,6 +48,8 @@ public class CcCuenta extends AppCompatActivity implements View.OnClickListener 
         btnCC.setOnClickListener(this);
         btnGC = findViewById(R.id.btnGC);
         btnGC.setOnClickListener(this);
+        btnR = findViewById(R.id.btnR);
+        btnR.setOnClickListener(this);
         btnEmergencia4 = findViewById(R.id.btnEmergencia4);
         btnEmergencia4.setOnClickListener(this);
         btnGlosario4 = findViewById(R.id.btnGlosario4);
@@ -63,12 +65,13 @@ public class CcCuenta extends AppCompatActivity implements View.OnClickListener 
         Cursor fila = basesita.rawQuery(query, new String[]{String.valueOf(userId)});
         if (fila.moveToFirst()) {
             btnCuenta17.setText(fila.getString(0));
-            txtVCNom.setText(fila.getString(0));
-            txtVCNSS.setText(fila.getString(2));
-            txtVCCURP.setText(fila.getString(3));
-            txtVCNumFam.setText(fila.getString(4));
+            String temporal = fila.getString(0) + " " + fila.getString(1);
+            txtVCNom.setText("Nombre: "+temporal);
+            txtVCNSS.setText("NSS: "+fila.getString(2));
+            txtVCCURP.setText("CURP: "+fila.getString(3));
+            txtVCNumFam.setText("Num. Familiar 1: "+fila.getString(4));
             if (verNumFam2 == 1) {
-                txtVCNumFam2.setText(fila.getString(5));
+                txtVCNumFam2.setText("Num. Familiar 2: "+fila.getString(5));
             } else {
                 txtVCNumFam2.setText("");
                 txtVCNumFam2.setVisibility(View.GONE);
@@ -92,17 +95,34 @@ public class CcCuenta extends AppCompatActivity implements View.OnClickListener 
         } else if (view.getId() == R.id.btnEscuchar17) {
             //Nada
         } else if (view.getId() == R.id.btnHC) {
-            //Nada
+            Intent intentito = new Intent(this, CcHistorialClinico.class);
+            startActivity(intentito);
         } else if (view.getId() == R.id.btnEV) {
-            //Nada
+            Intent intentito = new Intent(this, CcEsquemaVacuna.class);
+            startActivity(intentito);
         } else if (view.getId() == R.id.btnCC) {
-            //Nada
+            Intent intentito = new Intent(this, CcCambioClinica.class);
+            startActivity(intentito);
         } else if (view.getId() == R.id.btnGC) {
-            //Nada
+            Intent intentito = new Intent(this, CcGeneracionCita.class);
+            startActivity(intentito);
+        } else if (view.getId() == R.id.btnR) {
+            Intent intentito = new Intent(this, CcReceta.class);
+            startActivity(intentito);
         } else if (view.getId() == R.id.btnEmergencia4) {
-            //Nada
+            abrirMarcador("911");
         } else if (view.getId() == R.id.btnGlosario4) {
-            //Nada
+            Intent intentito = new Intent(this, CcGlosario.class);
+            startActivity(intentito);
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }

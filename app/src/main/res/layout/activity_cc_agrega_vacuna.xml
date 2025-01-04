@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DCE3DA"
-    android:paddingRight="20dp"
-    tools:context=".ncfragndh">
+    tools:context=".CcAgregaVacuna">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="130dp"
@@ -16,14 +18,14 @@
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="20dp"
             android:backgroundTint="@color/white"
             android:padding="12dp"
             android:textColor="@color/black"
             android:textSize="25dp"
             android:textStyle="bold"
             android:text="MENÚ"
-            android:id="@+id/btnMenuF3N1"
+            android:id="@+id/btnMenu24"
             android:drawableLeft="@drawable/menu_icon"/>
         <Button
             android:layout_width="wrap_content"
@@ -32,16 +34,16 @@
             android:backgroundTint="#DFD4BA"
             android:padding="12dp"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             android:text="CUENTA"
-            android:id="@+id/btnCuentaF3N1"
+            android:id="@+id/btnCuenta24"
             android:drawableLeft="@drawable/user_icon"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="10dp"
         android:paddingHorizontal="20dp"
         android:orientation="horizontal"
         android:gravity="center">
@@ -52,102 +54,88 @@
             android:backgroundTint="#DDD3B9"
             android:text="REGRESAR"
             android:textStyle="bold"
-            android:textSize="22dp"
+            android:textSize="25dp"
             android:textColor="@color/black"
             android:drawableLeft="@drawable/back_icon"
             android:padding="12dp"
-            android:id="@+id/btnRetornoF3N1"/>
+            android:id="@+id/btnRetorno24"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:text="ESCUCHA"
-            android:textSize="16dp"
+            android:textSize="14dp"
             android:textStyle="bold"
             android:backgroundTint="#E67694"
             android:textColor="@color/black"
-            android:id="@+id/btnEscucharF3N1"
+            android:id="@+id/btnEscuchar24"
             android:drawableRight="@drawable/listen_icon"
             android:padding="12dp"/>
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="470dp"
-        android:layout_marginTop="220dp">
+        android:layout_height="470dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
+            <LinearLayout
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="NO DERECHOHABIENCIA"
-                android:textSize="27dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Agregar vacuna"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Nombre de la vacuna:"
+                    android:textSize="22dp"
+                    android:textColor="@color/black"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edtext_background"
+                    android:padding="10dp"
+                    android:hint="Nombre de Vacuna"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/txtNombreVacuna"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#575F83"
+                android:paddingVertical="15dp"
+                android:text="Añadir vacuna a usuario"
+                android:textSize="22dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:gravity="center"
-                android:text="Documentación que ocuparás:"
-                android:textSize="24dp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="* CURP"
-                android:textSize="24dp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="* Un correo electrónico"
-                android:textSize="24dp"
-                android:textColor="@color/black"/>
-            <ImageView
-                android:layout_width="320dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:src="@drawable/ncndh"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:gravity="center"
-                android:text="Junto al rectángulo de color, copiar las letras minúsculas o mayúsculas."
-                android:textSize="24dp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="Ej. &quot;ABc&quot;. Tú escribirías &quot;A&quot; y &quot;B&quot; mayúsculas y &quot;c&quot; minúscula."
-                android:textSize="24dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"
+                android:id="@+id/btnagregarBD"/>
         </LinearLayout>
     </ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:layout_marginTop="695dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:background="#536152"
-        android:gravity="center_horizontal">
+        android:gravity="center">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="65dp"
-            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:backgroundTint="#E6CFA0"
             android:padding="12dp"
@@ -155,18 +143,17 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="EMERGENCIA"
-            android:id="@+id/btnEmergenciaF3N1"
+            android:id="@+id/btnEmergencia24"
             android:drawableLeft="@drawable/call_icon"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="65dp"
-            android:layout_marginTop="10dp"
             android:backgroundTint="#DFD4BA"
             android:padding="12dp"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="GLOSARIO"
-            android:id="@+id/btnGlosarioF3N1"/>
+            android:id="@+id/btnGlosario24"/>
     </LinearLayout>
-</FrameLayout>
+</LinearLayout>

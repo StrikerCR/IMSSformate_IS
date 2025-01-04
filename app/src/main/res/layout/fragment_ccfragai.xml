@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#DCE3DA"
     android:paddingRight="20dp"
-    tools:context=".ncfraguc">
+    tools:context=".ccfragai">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="130dp"
@@ -16,14 +16,14 @@
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="20dp"
             android:backgroundTint="@color/white"
             android:padding="12dp"
             android:textColor="@color/black"
             android:textSize="25dp"
             android:textStyle="bold"
             android:text="MENÚ"
-            android:id="@+id/btnMenuF7N1"
+            android:id="@+id/btnMenuF5N2"
             android:drawableLeft="@drawable/menu_icon"/>
         <Button
             android:layout_width="wrap_content"
@@ -32,10 +32,10 @@
             android:backgroundTint="#DFD4BA"
             android:padding="12dp"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             android:text="CUENTA"
-            android:id="@+id/btnCuentaF7N1"
+            android:id="@+id/btnCuentaF5N2"
             android:drawableLeft="@drawable/user_icon"/>
     </LinearLayout>
     <LinearLayout
@@ -56,7 +56,7 @@
             android:textColor="@color/black"
             android:drawableLeft="@drawable/back_icon"
             android:padding="12dp"
-            android:id="@+id/btnRetornoF7N1"/>
+            android:id="@+id/btnRetornoF5N2"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="55dp"
@@ -65,7 +65,7 @@
             android:textStyle="bold"
             android:backgroundTint="#E67694"
             android:textColor="@color/black"
-            android:id="@+id/btnEscucharF7N1"
+            android:id="@+id/btnEscucharF5N2"
             android:drawableRight="@drawable/listen_icon"
             android:padding="12dp"/>
     </LinearLayout>
@@ -76,14 +76,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingVertical="10dp"
             android:orientation="vertical">
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="UBICA TU CLÍNICA"
+                android:text="ALTA EN EL IMSS"
                 android:textSize="27dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
@@ -93,76 +93,54 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="¿Quieres buscar una unidad específica del IMSS cerca de ti?\nBusca en el cuadro de [ SELECIONA OPCION ]:\nUna Imagen de la ubicación clínica seleccionada se desplegará debajo."
-                android:textSize="20dp"
+                android:text="Documentación que ocuparás:"
+                android:textSize="24dp"
                 android:textColor="@color/black"/>
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:text="Opciones"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-            <Spinner
-                android:layout_width="350dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:id="@+id/spnOpc"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="Código Postal"
-                android:textSize="20dp"
-                android:textStyle="bold"
+                android:text="* CURP"
+                android:textSize="24dp"
                 android:textColor="@color/black"/>
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/edtext_background"
-                android:paddingVertical="12dp"
-                android:hint="CODIGO POSTAL"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="22dp"
-                android:id="@+id/txtVCP"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="Dirección"
-                android:textSize="20dp"
-                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:text="* Un correo electrónico"
+                android:textSize="24dp"
                 android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@drawable/edtext_background"
-                android:paddingVertical="12dp"
-                android:hint="DIRECCIÓN"
-                android:gravity="center"
-                android:textSize="20dp"
-                android:id="@+id/txtVDir"/>
             <ImageView
-                android:layout_width="350dp"
-                android:layout_height="220dp"
-                android:layout_gravity="center"
+                android:layout_width="320dp"
+                android:layout_height="200dp"
                 android:layout_marginTop="10dp"
-                android:id="@+id/imgMapa"
-                android:visibility="gone"/>
+                android:layout_gravity="center"
+                android:src="@drawable/ncai"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Junto al rectángulo de color, copiar las letras minúsculas o mayúsculas."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Ej. &quot;ABc&quot;. Tú escribirías &quot;A&quot; y &quot;B&quot; mayúsculas y &quot;c&quot; minúscula."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
         </LinearLayout>
     </ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="140dp"
-        android:layout_marginTop="696dp"
+        android:layout_marginTop="694dp"
         android:orientation="horizontal"
         android:background="#536152"
         android:gravity="center_horizontal">
@@ -177,7 +155,7 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="EMERGENCIA"
-            android:id="@+id/btnEmergenciaF7N1"
+            android:id="@+id/btnEmergenciaF5N2"
             android:drawableLeft="@drawable/call_icon"/>
         <Button
             android:layout_width="wrap_content"
@@ -189,6 +167,6 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="GLOSARIO"
-            android:id="@+id/btnGlosarioF7N1"/>
+            android:id="@+id/btnGlosarioF5N2"/>
     </LinearLayout>
 </FrameLayout>

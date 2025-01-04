@@ -14,18 +14,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
-public class ccfragnss extends Fragment implements View.OnClickListener {
-    Button btnMenuF2N2, btnCuentaF2N2, btnRetornoF2N2, btnEscucharF2N2, btnEmergenciaF2N2, btnGlosarioF2N2;
-    TextView txtVTramite;
+public class ccfragsc extends Fragment implements View.OnClickListener {
+    Button btnMenuF4N2, btnCuentaF4N2, btnEscucharF4N2, btnEmergenciaF4N2, btnGlosarioF4N2, btnRetornoF4N2;
     int userId;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ccfragnss, container, false);
+        return inflater.inflate(R.layout.fragment_ccfragsc, container, false);
     }
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -36,26 +34,24 @@ public class ccfragnss extends Fragment implements View.OnClickListener {
             Toast.makeText(requireContext(), "No se recibió el ID del usuario", Toast.LENGTH_SHORT).show();
             return;
         }
-        btnMenuF2N2 = view.findViewById(R.id.btnMenuF2N2);
-        btnMenuF2N2.setOnClickListener(this);
-        btnCuentaF2N2 = view.findViewById(R.id.btnCuentaF2N2);
-        btnCuentaF2N2.setOnClickListener(this);
-        btnRetornoF2N2 = view.findViewById(R.id.btnRetornoF2N2);
-        btnRetornoF2N2.setOnClickListener(this);
-        btnEscucharF2N2 = view.findViewById(R.id.btnEscucharF2N2);
-        btnEscucharF2N2.setOnClickListener(this);
-        btnEmergenciaF2N2 = view.findViewById(R.id.btnEmergenciaF2N2);
-        btnEmergenciaF2N2.setOnClickListener(this);
-        btnGlosarioF2N2 = view.findViewById(R.id.btnGlosarioF2N2);
-        btnGlosarioF2N2.setOnClickListener(this);
-
-        txtVTramite = view.findViewById(R.id.txtVTramite);
+        btnMenuF4N2 = view.findViewById(R.id.btnMenuF4N2);
+        btnMenuF4N2.setOnClickListener(this);
+        btnCuentaF4N2 = view.findViewById(R.id.btnCuentaF4N2);
+        btnCuentaF4N2.setOnClickListener(this);
+        btnEscucharF4N2 = view.findViewById(R.id.btnEscucharF4N2);
+        btnEscucharF4N2.setOnClickListener(this);
+        btnEmergenciaF4N2 = view.findViewById(R.id.btnEmergenciaF4N2);
+        btnEmergenciaF4N2.setOnClickListener(this);
+        btnGlosarioF4N2 = view.findViewById(R.id.btnGlosarioF4N2);
+        btnGlosarioF4N2.setOnClickListener(this);
+        btnRetornoF4N2 = view.findViewById(R.id.btnRetornoF4N2);
+        btnRetornoF4N2.setOnClickListener(this);
 
         SQLiteDatabase basesita = admin.getReadableDatabase();
         String query = "SELECT nombre, apellidos, nss, curp, numFam1, numFam2 FROM Usuarios WHERE id = ?";
         Cursor fila = basesita.rawQuery(query, new String[]{String.valueOf(userId)});
         if (fila.moveToFirst()) {
-            btnCuentaF2N2.setText(fila.getString(0));
+            btnCuentaF4N2.setText(fila.getString(0));
         }
         fila.close();
         basesita.close();
@@ -63,21 +59,21 @@ public class ccfragnss extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.btnMenuF2N2) {
+        if (view.getId() == R.id.btnMenuF4N2) {
             Intent intentito = new Intent(getActivity(), CcMenu.class);
             startActivity(intentito);
-        } else if (view.getId() == R.id.btnCuentaF2N2) {
-            Intent intentito = new Intent(getActivity(), CcCuenta.class);
-            startActivity(intentito);
-        } else if (view.getId() == R.id.btnRetornoF2N2) {
-            Navigation.findNavController(view).navigate(R.id.ccfraginicio);
-        } else if (view.getId() == R.id.btnEscucharF2N2) {
+        } else if (view.getId() == R.id.btnCuentaF4N2) {
+            Intent intent = new Intent(requireContext(), CcCuenta.class);
+            startActivity(intent);
+        } else if (view.getId() == R.id.btnEscucharF4N2) {
             //Nada
-        } else if (view.getId() == R.id.btnEmergenciaF2N2) {
+        } else if (view.getId() == R.id.btnEmergenciaF4N2) {
             //Nada
-        } else if (view.getId() == R.id.btnGlosarioF2N2) {
+        } else if (view.getId() == R.id.btnGlosarioF4N2) {
             Intent intentito = new Intent(getActivity(), CcGlosario.class);
             startActivity(intentito);
+        } else if (view.getId() == R.id.btnRetornoF4N2) {
+            Navigation.findNavController(view).navigate(R.id.ccfraginicio);
         }
     }
 }

@@ -13,6 +13,21 @@
         <action
             android:id="@+id/action_ccfraginicio_to_ccfragnss"
             app:destination="@id/ccfragnss" />
+        <action
+            android:id="@+id/action_ccfraginicio_to_ccfragndh"
+            app:destination="@id/ccfragndh" />
+        <action
+            android:id="@+id/action_ccfraginicio_to_ccfragsc"
+            app:destination="@id/ccfragsc" />
+        <action
+            android:id="@+id/action_ccfraginicio_to_ccfragsp"
+            app:destination="@id/ccfragsp" />
+        <action
+            android:id="@+id/action_ccfraginicio_to_ccfragai"
+            app:destination="@id/ccfragai" />
+        <action
+            android:id="@+id/action_ccfraginicio_to_ccfraguc"
+            app:destination="@id/ccfraguc" />
     </fragment>
     <fragment
         android:id="@+id/ccfragnss"
@@ -21,6 +36,51 @@
         tools:layout="@layout/fragment_ccfragnss" >
         <action
             android:id="@+id/action_ccfragnss_to_ccfraginicio"
+            app:destination="@id/ccfraginicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/ccfragai"
+        android:name="com.example.imss.ccfragai"
+        android:label="fragment_ccfragai"
+        tools:layout="@layout/fragment_ccfragai" >
+        <action
+            android:id="@+id/action_ccfragai_to_ccfraginicio"
+            app:destination="@id/ccfraginicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/ccfragndh"
+        android:name="com.example.imss.ccfragndh"
+        android:label="fragment_ccfragndh"
+        tools:layout="@layout/fragment_ccfragndh" >
+        <action
+            android:id="@+id/action_ccfragndh_to_ccfraginicio"
+            app:destination="@id/ccfraginicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/ccfragsc"
+        android:name="com.example.imss.ccfragsc"
+        android:label="fragment_ccfragsc"
+        tools:layout="@layout/fragment_ccfragsc" >
+        <action
+            android:id="@+id/action_ccfragsc_to_ccfraginicio"
+            app:destination="@id/ccfraginicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/ccfragsp"
+        android:name="com.example.imss.ccfragsp"
+        android:label="fragment_ccfragsp"
+        tools:layout="@layout/fragment_ccfragsp" >
+        <action
+            android:id="@+id/action_ccfragsp_to_ccfraginicio"
+            app:destination="@id/ccfraginicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/ccfraguc"
+        android:name="com.example.imss.ccfraguc"
+        android:label="fragment_ccfraguc"
+        tools:layout="@layout/fragment_ccfraguc" >
+        <action
+            android:id="@+id/action_ccfraguc_to_ccfraginicio"
             app:destination="@id/ccfraginicio" />
     </fragment>
 </navigation>

@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DCE3DA"
     tools:context=".CcDatosUsuario">
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,14 +18,14 @@
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="20dp"
             android:backgroundTint="@color/white"
             android:padding="12dp"
             android:textColor="@color/black"
             android:textSize="25dp"
             android:textStyle="bold"
             android:text="MENÚ"
-            android:id="@+id/btnMenu9"
+            android:id="@+id/btnMenu11"
             android:drawableLeft="@drawable/menu_icon"/>
         <Button
             android:layout_width="wrap_content"
@@ -33,10 +34,10 @@
             android:backgroundTint="#DFD4BA"
             android:padding="12dp"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             android:text="CUENTA"
-            android:id="@+id/btnCuenta9"
+            android:id="@+id/btnCuenta11"
             android:drawableLeft="@drawable/user_icon"/>
     </LinearLayout>
     <LinearLayout
@@ -57,7 +58,7 @@
             android:textColor="@color/black"
             android:drawableLeft="@drawable/back_icon"
             android:padding="12dp"
-            android:id="@+id/btnRetorno9"/>
+            android:id="@+id/btnRetorno11"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="55dp"
@@ -66,7 +67,7 @@
             android:textStyle="bold"
             android:backgroundTint="#E67694"
             android:textColor="@color/black"
-            android:id="@+id/btnEscuchar9"
+            android:id="@+id/btnEscuchar11"
             android:drawableRight="@drawable/listen_icon"
             android:padding="12dp"/>
     </LinearLayout>
@@ -77,55 +78,75 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="DATOS DE PERFIL"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/txtVDCCNom"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/txtVDCCNSS"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/txtVDCCCURP"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/txtVDCCNumFam"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/txtVDCCNumFam2"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="@color/black"/>
             <Button
                 android:layout_width="300dp"
-                android:layout_height="90dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="100dp"
                 android:backgroundTint="#272B3C"
-                android:text="EDITAR DATOS DE LA CUENTA"
+                android:text="EDITAR DATOS"
                 android:textSize="26dp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
-                android:id="@+id/btnSettingsCC"
+                android:id="@+id/btnEditarDatos"
                 android:drawableLeft="@drawable/userw_icon"/>
-            <Button
-                android:layout_width="300dp"
-                android:layout_height="90dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="#272B3C"
-                android:text="CÓMO USAR LA APLICACIÓN"
-                android:textSize="26dp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:id="@+id/btnHowUseCC"
-                android:drawableLeft="@drawable/info_icon"/>
-            <Button
-                android:layout_width="300dp"
-                android:layout_height="90dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="#272B3C"
-                android:text="CONTACTOS IMSS"
-                android:textSize="26dp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:id="@+id/btnContImssCC"
-                android:drawableLeft="@drawable/contact_icon"/>
-            <Button
-                android:layout_width="300dp"
-                android:layout_height="70dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:backgroundTint="#7C0505"
-                android:paddingHorizontal="10dp"
-                android:text="CERRAR SESIÓN"
-                android:textSize="26dp"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:id="@+id/btnCerrarSCC"
-                android:drawableLeft="@drawable/close_icon"/>
+
         </LinearLayout>
     </ScrollView>
     <LinearLayout
@@ -145,7 +166,7 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="EMERGENCIA"
-            android:id="@+id/btnEmergencia9"
+            android:id="@+id/btnEmergencia11"
             android:drawableLeft="@drawable/call_icon"/>
         <Button
             android:layout_width="wrap_content"
@@ -156,6 +177,6 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="GLOSARIO"
-            android:id="@+id/btnGlosario9"/>
+            android:id="@+id/btnGlosario11"/>
     </LinearLayout>
 </LinearLayout>

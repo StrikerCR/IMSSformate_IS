@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DCE3DA"
-    android:paddingRight="20dp"
-    tools:context=".ncfraguc">
+    tools:context=".CcContactoImss">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="130dp"
@@ -23,7 +25,7 @@
             android:textSize="25dp"
             android:textStyle="bold"
             android:text="MENÚ"
-            android:id="@+id/btnMenuF7N1"
+            android:id="@+id/btnMenu14"
             android:drawableLeft="@drawable/menu_icon"/>
         <Button
             android:layout_width="wrap_content"
@@ -35,55 +37,54 @@
             android:textSize="25dp"
             android:textStyle="bold"
             android:text="CUENTA"
-            android:id="@+id/btnCuentaF7N1"
+            android:id="@+id/btnCuenta14"
             android:drawableLeft="@drawable/user_icon"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="10dp"
         android:paddingHorizontal="20dp"
         android:orientation="horizontal"
         android:gravity="center">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="30dp"
             android:backgroundTint="#DDD3B9"
             android:text="REGRESAR"
             android:textStyle="bold"
-            android:textSize="22dp"
+            android:textSize="25dp"
             android:textColor="@color/black"
             android:drawableLeft="@drawable/back_icon"
             android:padding="12dp"
-            android:id="@+id/btnRetornoF7N1"/>
+            android:id="@+id/btnRetorno14"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:text="ESCUCHA"
-            android:textSize="16dp"
+            android:textSize="14dp"
             android:textStyle="bold"
             android:backgroundTint="#E67694"
             android:textColor="@color/black"
-            android:id="@+id/btnEscucharF7N1"
+            android:id="@+id/btnEscuchar14"
             android:drawableRight="@drawable/listen_icon"
             android:padding="12dp"/>
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="470dp"
-        android:layout_marginTop="220dp">
+        android:layout_height="470dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingVertical="10dp"
             android:orientation="vertical">
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="UBICA TU CLÍNICA"
+                android:text="CONTACTOS IMSS"
                 android:textSize="27dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
@@ -91,85 +92,64 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:gravity="center"
-                android:text="¿Quieres buscar una unidad específica del IMSS cerca de ti?\nBusca en el cuadro de [ SELECIONA OPCION ]:\nUna Imagen de la ubicación clínica seleccionada se desplegará debajo."
-                android:textSize="20dp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="Opciones"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-            <Spinner
-                android:layout_width="350dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:id="@+id/spnOpc"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="Código Postal"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:background="@drawable/edtext_background"
-                android:paddingVertical="12dp"
-                android:hint="CODIGO POSTAL"
-                android:gravity="center"
-                android:textColor="@color/black"
+                android:layout_marginTop="25dp"
+                android:text="* Atención telefónica: 800 623 2323. Opciones:"
                 android:textSize="22dp"
-                android:id="@+id/txtVCP"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="Dirección"
-                android:textSize="20dp"
-                android:textStyle="bold"
                 android:textColor="@color/black"/>
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/edtext_background"
-                android:paddingVertical="12dp"
-                android:hint="DIRECCIÓN"
-                android:gravity="center"
-                android:textSize="20dp"
-                android:id="@+id/txtVDir"/>
-            <ImageView
+                android:text="      ° 0 - Personas Trabajadoras del Hogar."
+                android:textSize="22dp"
+                android:textColor="@color/black"/>
+            <TextView
                 android:layout_width="350dp"
-                android:layout_height="220dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:id="@+id/imgMapa"
-                android:visibility="gone"/>
+                android:text="      ° 1 - Derechohabiente."
+                android:textSize="22dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="      ° 2 - Contribuyente."
+                android:textSize="22dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="* Línea para agendar citas médicas: 800 681 2525."
+                android:textSize="22dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="* Correo electrónico IMSS: http://www.imss.gob.mx/contacto/correoimss."
+                android:textSize="22dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="* Preguntas frecuentes: http://www.imss.gob.mx/contacto/preguntas-frecuentes."
+                android:textSize="22dp"
+                android:textColor="@color/black"/>
         </LinearLayout>
     </ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:layout_marginTop="696dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:background="#536152"
-        android:gravity="center_horizontal">
+        android:gravity="center">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="65dp"
-            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:backgroundTint="#E6CFA0"
             android:padding="12dp"
@@ -177,18 +157,17 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="EMERGENCIA"
-            android:id="@+id/btnEmergenciaF7N1"
+            android:id="@+id/btnEmergencia14"
             android:drawableLeft="@drawable/call_icon"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="65dp"
-            android:layout_marginTop="10dp"
             android:backgroundTint="#DFD4BA"
             android:padding="12dp"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="GLOSARIO"
-            android:id="@+id/btnGlosarioF7N1"/>
+            android:id="@+id/btnGlosario14"/>
     </LinearLayout>
-</FrameLayout>
+</LinearLayout>

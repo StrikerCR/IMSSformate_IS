@@ -15,8 +15,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class CcMenu extends AppCompatActivity implements View.OnClickListener {
-    Button btnMenu9, btnCuenta9, btnRetorno9, btnEscuchar9, btnSettingsCC, btnHowUseCC, btnContImssCC, btnEmergencia9, btnGlosario9;
-    int userId, verNumFam2;
+    Button btnMenu9, btnCuenta9, btnRetorno9, btnEscuchar9, btnSettingsCC, btnHowUseCC, btnContImssCC, btnEmergencia9, btnGlosario9, btnCerrarSCC;
+    int userId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +46,9 @@ public class CcMenu extends AppCompatActivity implements View.OnClickListener {
         btnEmergencia9.setOnClickListener(this);
         btnGlosario9 = findViewById(R.id.btnGlosario9);
         btnGlosario9.setOnClickListener(this);
+        btnCerrarSCC = findViewById(R.id.btnCerrarSCC);
+        btnCerrarSCC.setOnClickListener(this);
+
         SQLiteDatabase basesita = admin.getReadableDatabase();
         String query = "SELECT nombre, apellidos, nss, curp, numFam1, numFam2 FROM Usuarios WHERE id = ?";
         Cursor fila = basesita.rawQuery(query, new String[]{String.valueOf(userId)});
@@ -58,29 +61,34 @@ public class CcMenu extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.btnMenu17) {
+        if (view.getId() == R.id.btnMenu9) {
             Intent intentito = new Intent(this, CcMenu.class);
             startActivity(intentito);
-        } else if (view.getId() == R.id.btnCuenta17) {
+        } else if (view.getId() == R.id.btnCuenta9) {
             Intent intentito = new Intent(this, CcCuenta.class);
             startActivity(intentito);
-        } else if (view.getId() == R.id.btnRetorno17) {
+        } else if (view.getId() == R.id.btnRetorno9) {
             Intent intentito = new Intent(this, MainActivity3.class);
             startActivity(intentito);
-        } else if (view.getId() == R.id.btnEscuchar17) {
+        } else if (view.getId() == R.id.btnEscuchar9) {
             //Nada
         } else if (view.getId() == R.id.btnSettingsCC) {
-            //Nada
+            Intent intentito = new Intent(this, CcDatosUsuario.class);
+            startActivity(intentito);
         } else if (view.getId() == R.id.btnHowUseCC) {
-            //Nada
+            Intent intentito = new Intent(this, CcAplicacion.class);
+            startActivity(intentito);
         } else if (view.getId() == R.id.btnContImssCC) {
-            //Nada
+            Intent intentito = new Intent(this, CcContactoImss.class);
+            startActivity(intentito);
         } else if (view.getId() == R.id.btnEmergencia9) {
             //Nada
         } else if (view.getId() == R.id.btnGlosario9) {
-            //Nada
-        } else if (view.getId() == R.id.btnEmergencia4) {
-            //Nada
+            Intent intentito = new Intent(this, CcGlosario.class);
+            startActivity(intentito);
+        } else if (view.getId() == R.id.btnCerrarSCC) {
+            Intent intentito = new Intent(this, CcCerrarSesion.class);
+            startActivity(intentito);
         }
     }
 }

@@ -13,6 +13,39 @@
         android:theme="@style/Theme.IMSS"
         tools:targetApi="31">
         <activity
+            android:name=".CcAgregaVacuna"
+            android:exported="false" />
+        <activity
+            android:name=".CcGeneracionCita"
+            android:exported="false" />
+        <activity
+            android:name=".CcCambioClinica"
+            android:exported="false" />
+        <activity
+            android:name=".CcReceta"
+            android:exported="false" />
+        <activity
+            android:name=".CcEsquemaVacuna"
+            android:exported="false" />
+        <activity
+            android:name=".CcHistorialClinico"
+            android:exported="false" />
+        <activity
+            android:name=".CcGlosario"
+            android:exported="false" />
+        <activity
+            android:name=".CcCerrarSesion"
+            android:exported="false" />
+        <activity
+            android:name=".CcContactoImss"
+            android:exported="false" />
+        <activity
+            android:name=".CcAplicacion"
+            android:exported="false" />
+        <activity
+            android:name=".CcEditarDatos"
+            android:exported="false" />
+        <activity
             android:name=".CcDatosUsuario"
             android:exported="false" />
         <activity
