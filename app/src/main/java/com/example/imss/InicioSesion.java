@@ -71,7 +71,7 @@ public class InicioSesion extends AppCompatActivity implements View.OnClickListe
             Intent intentito = new Intent(this, NcCuenta.class);
             startActivity(intentito);
         } else if (view.getId() == R.id.btnEmergencia8) {
-            //Nada
+            abrirMarcador("911");
         } else if (view.getId() == R.id.btnGlosario8) {
             Intent intentito = new Intent(this, NcGlosario.class);
             startActivity(intentito);
@@ -106,6 +106,15 @@ public class InicioSesion extends AppCompatActivity implements View.OnClickListe
             }
             fila.close();
             basesita.close();
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }

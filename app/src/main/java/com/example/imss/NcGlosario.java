@@ -110,7 +110,7 @@ public class NcGlosario extends AppCompatActivity implements View.OnClickListene
             Intent intentito = new Intent(this, MainActivity2.class);
             startActivity(intentito);
         } else if (view.getId() == R.id.btnEscuchar7) {
-            //Nada
+            abrirMarcador("911");
         } else if (view.getId() == R.id.btnA) {
             scrollToSection(R.id.sectionA);
         } else if (view.getId() == R.id.btnB) {
@@ -172,6 +172,15 @@ public class NcGlosario extends AppCompatActivity implements View.OnClickListene
         TextView section = findViewById(sectionId);
         if (section != null) {
             scrollView.smoothScrollTo(0, section.getTop());
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }

@@ -74,7 +74,7 @@ public class RegistroUsuario extends AppCompatActivity implements View.OnClickLi
             Intent intentito = new Intent(this, NcCuenta.class);
             startActivity(intentito);
         } else if (view.getId() == R.id.btnEmergencia6) {
-            //Nada
+            abrirMarcador("911");
         } else if (view.getId() == R.id.btnGlosario6) {
             Intent intentito = new Intent(this, NcGlosario.class);
             startActivity(intentito);
@@ -95,6 +95,15 @@ public class RegistroUsuario extends AppCompatActivity implements View.OnClickLi
             intentito.putExtra("curp", rgCURP.getText().toString());
             intentito.putExtra("numFam", rgNumFam.getText().toString());
             startActivity(intentito);
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }

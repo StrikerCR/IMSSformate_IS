@@ -64,10 +64,19 @@ public class CcContactoImss extends AppCompatActivity implements View.OnClickLis
         } else if (view.getId() == R.id.btnEscuchar14) {
             //Nada
         } else if (view.getId() == R.id.btnEmergencia14) {
-            //Nada
+            abrirMarcador("911");
         } else if (view.getId() == R.id.btnGlosario14) {
             Intent intentito = new Intent(this, CcGlosario.class);
             startActivity(intentito);
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }

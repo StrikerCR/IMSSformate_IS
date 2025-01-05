@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -50,7 +51,7 @@ public class NcCuenta extends AppCompatActivity implements View.OnClickListener 
             Intent intentito = new Intent(this, MainActivity2.class);
             startActivity(intentito);
         } else if (view.getId() == R.id.btnEmergencia5) {
-            //Nada
+            abrirMarcador("911");
         } else if (view.getId() == R.id.btnGlosario5) {
             Intent intentito = new Intent(this, NcGlosario.class);
             startActivity(intentito);
@@ -65,6 +66,15 @@ public class NcCuenta extends AppCompatActivity implements View.OnClickListener 
         } else if (view.getId() == R.id.btnISRedir) {
             Intent intentito = new Intent(this, InicioSesion.class);
             startActivity(intentito);
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }

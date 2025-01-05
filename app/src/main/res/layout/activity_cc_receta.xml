@@ -103,7 +103,8 @@
                     android:background="@drawable/layout_background"
                     android:paddingVertical="20dp"
                     android:paddingHorizontal="15dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:id="@+id/layout1">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -152,7 +153,8 @@
                     android:background="@drawable/layout_background"
                     android:paddingVertical="20dp"
                     android:paddingHorizontal="15dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:id="@+id/layout2">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -201,7 +203,8 @@
                     android:background="@drawable/layout_background"
                     android:paddingVertical="20dp"
                     android:paddingHorizontal="15dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:id="@+id/layout3">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -250,7 +253,8 @@
                     android:background="@drawable/layout_background"
                     android:paddingVertical="20dp"
                     android:paddingHorizontal="15dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:id="@+id/layout4">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -299,7 +303,8 @@
                     android:background="@drawable/layout_background"
                     android:paddingVertical="20dp"
                     android:paddingHorizontal="15dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:id="@+id/layout5">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -341,7 +346,218 @@
                         android:textColor="@color/black"
                         android:id="@+id/txtVDosis5"/>
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/layout_background"
+                    android:paddingVertical="20dp"
+                    android:paddingHorizontal="15dp"
+                    android:orientation="vertical"
+                    android:id="@+id/layout6">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Fecha:"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtVFechaR6"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="MEDICAMENTOS:"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVMedic6"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVDosis6"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/layout_background"
+                    android:paddingVertical="20dp"
+                    android:paddingHorizontal="15dp"
+                    android:orientation="vertical"
+                    android:id="@+id/layout7">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Fecha:"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtVFechaR7"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="MEDICAMENTOS:"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVMedic7"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVDosis7"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/layout_background"
+                    android:paddingVertical="20dp"
+                    android:paddingHorizontal="15dp"
+                    android:orientation="vertical"
+                    android:id="@+id/layout8">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Fecha:"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtVFechaR8"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="MEDICAMENTOS:"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVMedic8"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVDosis8"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/layout_background"
+                    android:paddingVertical="20dp"
+                    android:paddingHorizontal="15dp"
+                    android:orientation="vertical"
+                    android:id="@+id/layout9">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Fecha:"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtVFechaR9"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="MEDICAMENTOS:"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVMedic9"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVDosis9"/>
+                </LinearLayout>
             </LinearLayout>
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#575F83"
+                android:text="Añadir un registro"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/btnAgregarRegistroR"/>
         </LinearLayout>
     </ScrollView>
     <LinearLayout

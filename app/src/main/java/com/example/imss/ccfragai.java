@@ -68,12 +68,21 @@ public class ccfragai extends Fragment implements View.OnClickListener {
         } else if (view.getId() == R.id.btnEscucharF5N2) {
             //Nada
         } else if (view.getId() == R.id.btnEmergenciaF5N2) {
-            //Nada
+            abrirMarcador("911");
         } else if (view.getId() == R.id.btnGlosarioF5N2) {
             Intent intentito = new Intent(getActivity(), CcGlosario.class);
             startActivity(intentito);
         } else if (view.getId() == R.id.btnRetornoF5N2) {
             Navigation.findNavController(view).navigate(R.id.ccfraginicio);
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(requireContext().getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(requireContext(), "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }

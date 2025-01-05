@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class ncfraginicio extends Fragment implements View.OnClickListener {
     @Override
@@ -68,10 +69,19 @@ public class ncfraginicio extends Fragment implements View.OnClickListener {
         } else if (view.getId() == R.id.btnUCN1) {
             Navigation.findNavController(view).navigate(R.id.ncfraguc);
         } else if (view.getId() == R.id.btnEmergenciaF1N1) {
-            //Nada
+            abrirMarcador("911");
         } else if (view.getId() == R.id.btnGlosarioF1N1) {
             Intent intentito = new Intent(getActivity(), NcGlosario.class);
             startActivity(intentito);
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(requireContext().getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(requireContext(), "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }

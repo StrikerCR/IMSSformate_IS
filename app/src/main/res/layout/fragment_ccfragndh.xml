@@ -83,7 +83,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="NO DERECHOHABIENCIA"
+                android:text="Solicitar tu Documento de No Derechohabiente"
                 android:textSize="27dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
@@ -91,49 +91,94 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Este documento hace constar que no cuentas con derecho al servicio médico en el IMSS en el día que lo consultas. No se emitirá ningún documento cuando estés vigente con derecho al servicio médico."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Documentación que ocuparás:"
-                android:textSize="24dp"
+                android:text="En línea:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="1. Ingresa al portal del IMSS: "
+                android:textSize="25dp"
                 android:textColor="@color/black"/>
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="* CURP"
-                android:textSize="24dp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="* Un correo electrónico"
+                android:layout_marginTop="10dp"
+                android:text="https://digital.imss.gob.mx/derechohabiencia/tramite/solicitudConstancia"
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
             <ImageView
-                android:layout_width="320dp"
+                android:layout_width="350dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ncndh"/>
             <TextView
-                android:layout_width="350dp"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:gravity="center"
-                android:text="Junto al rectángulo de color, copiar las letras minúsculas o mayúsculas."
+                android:text="2. Proporciona los datos solicitados:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* CURP"
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
             <TextView
-                android:layout_width="350dp"
+                android:layout_width="310dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
-                android:text="Ej. &quot;ABc&quot;. Tú escribirías &quot;A&quot; y &quot;B&quot; mayúsculas y &quot;c&quot; minúscula."
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Un correo electrónico"
                 android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Confirmación de correo electrónico."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* CAPTCHA (vease el glosario en caso de dudas)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+                android:text="3. Descarga tu constancia directamente, considera que esta constancia solo será válida el día que se emite."
+                android:textSize="25dp"
                 android:textColor="@color/black"/>
         </LinearLayout>
     </ScrollView>

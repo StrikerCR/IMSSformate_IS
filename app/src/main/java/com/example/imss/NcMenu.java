@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -56,10 +57,19 @@ public class NcMenu extends AppCompatActivity implements View.OnClickListener {
             Intent intentito = new Intent(this, NcContactoImss.class);
             startActivity(intentito);
         } else if (view.getId() == R.id.btnEmergencia2) {
-            //nada
+            abrirMarcador("911");
         } else if (view.getId() == R.id.btnGlosario2) {
             Intent intentito = new Intent(this, NcGlosario.class);
             startActivity(intentito);
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }

@@ -83,7 +83,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="ALTA EN EL IMSS"
+                android:text="Darte de Alta en el IMSS"
                 android:textSize="27dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
@@ -93,7 +93,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Documentación que ocuparás:"
+                android:text="Si no cuentas con NSS deberás realizar lo siguiente:"
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
             <TextView
@@ -101,38 +101,263 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:text="* CURP"
-                android:textSize="24dp"
+                android:gravity="center"
+                android:text="En linea:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="1. Ingresa al portal del IMSS: "
+                android:textSize="25dp"
                 android:textColor="@color/black"/>
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="* Un correo electrónico"
+                android:layout_marginTop="10dp"
+                android:text="https://serviciosdigitales.imss.gob.mx/gestionAsegurados-web-externo/home/asegurado"
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
             <ImageView
-                android:layout_width="320dp"
+                android:layout_width="350dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ncai"/>
             <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="2. Proporciona los datos solicitados:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* CURP"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Un correo electrónico"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Confirmación de correo electrónico."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* CAPTCHA (vease el glosario en caso de dudas)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="3. Proporciona los datos de tu domicilio."
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Junto al rectángulo de color, copiar las letras minúsculas o mayúsculas."
+                android:text="Si ya tienes NSS pero quieres darte de alta en una clínica deberás realizar lo siguiente:"
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Ej. &quot;ABc&quot;. Tú escribirías &quot;A&quot; y &quot;B&quot; mayúsculas y &quot;c&quot; minúscula."
+                android:text="En linea:"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="1. Ingresa al portal del IMSS: "
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="https://serviciosdigitales.imss.gob.mx/portal-ciudadano-web-externo/derechohabientes/tramite/registro"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/altaimss"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="2. Proporciona los datos solicitados:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* CURP"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Un correo electrónico"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Confirmación de correo electrónico."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* CAPTCHA (vease el glosario en caso de dudas)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="3. Continúa con el trámite llenando los datos de la dirección de tu domicilio, deberás tener a la mano tu Código Postal."
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="4. Selecciona la clínica que quede más cercana a tu domicilio así como el horario de tu preferencia (Matutino o Vespertino)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="5. Descarga y guarda el comprobante de alta."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="En linea:"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="1. Acude a la Subdelegación del IMSS o a la Unidad de Medicina Familiar (UMF) que te corresponda (que quede más cercana a tu domicilio)."
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="1. Presenta los siguientes documentos:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Identificación oficial vigente (INE, pasaporte, etc.) original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* CURP original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Acta de nacimiento original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Comprobante de domicilio reciente (no mayor a 3 meses) original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="* En caso de ser trabajador, lleva también una copia de tu último recibo de nómina."
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
         </LinearLayout>

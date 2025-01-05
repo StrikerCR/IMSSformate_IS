@@ -83,7 +83,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="NUMERO SEGURIDAD SOCIAL"
+                android:text="Consultar tu Número de Seguridad Social (NSS)"
                 android:textSize="27dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
@@ -93,59 +93,157 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Documentación que ocuparás:"
-                android:textSize="24dp"
+                android:text="En línea:"
+                android:textSize="25dp"
                 android:textColor="@color/black"/>
             <TextView
-                android:layout_width="350dp"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:text="      * CURP"
-                android:textSize="24dp"
+                android:text="1. Ingresa al portal del IMSS: "
+                android:textSize="25dp"
                 android:textColor="@color/black"/>
             <TextView
-                android:layout_width="350dp"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="      * Un correo electrónico"
-                android:textSize="24dp"
+                android:text="https://serviciosdigitales.imss.gob.mx/gestionAsegurados-web-externo/home/asegurado"
+                android:textSize="25dp"
                 android:textColor="@color/black"/>
             <ImageView
-                android:layout_width="320dp"
+                android:layout_width="350dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ncnss"/>
             <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="2. Proporciona los datos solicitados:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="* CURP"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="* Un correo electrónico"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="* Confirmación de correo electrónico"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="* CAPTCHA (vease el glosario en caso de dudas)"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="3. Te llegará un correo como el siguiente:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/nsscorreo"/>
+            <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Junto al rectángulo amarillo, copiar las letras minúsculas o mayúsculas."
+                android:text="Debes dar clic en el enlace que venga en el correo (letras azules) y esto te redijirá a la página donde podrás descargar tu NSS y tu tarjeta de NSS."
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Ej. &quot;ABc&quot;. Tú escribirías &quot;A&quot; y &quot;B&quot; mayúsculas y &quot;c&quot; minúscula."
+                android:text="Presencial:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="1. Acude a la subdelegación del IMSS más cercana."
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="2. Lleva los siguientes documentos:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="* Identificación oficial vigente (INE, pasaporte, etc.) original y copia."
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
             <TextView
-                android:layout_width="350dp"
+                android:layout_width="310dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
-                android:gravity="center"
-                android:text="Trámite de NSS"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:text="* CURP original y copia."
                 android:textSize="24dp"
-                android:textColor="#3F51B5"
-                android:textStyle="bold"
-                android:id="@+id/txtVTramite"/>
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="50dp"
+                android:text="* Acta de nacimiento original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
         </LinearLayout>
     </ScrollView>
     <LinearLayout

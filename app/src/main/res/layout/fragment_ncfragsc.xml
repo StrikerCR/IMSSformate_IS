@@ -83,7 +83,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="SEMANAS COTIZADAS "
+                android:text="Consultar Semanas Cotizadas"
                 android:textSize="27dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
@@ -93,7 +93,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Documentación que ocuparás:"
+                android:text="Documento informativo que te permite conocer el número de semanas que tienes cotizadas ante el Instituto Mexicano del Seguro Social (IMSS)."
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
             <TextView
@@ -101,46 +101,135 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:text="* CURP"
-                android:textSize="24dp"
+                android:gravity="center"
+                android:text="En línea:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="1. Ingresa al portal del IMSS: "
+                android:textSize="25dp"
                 android:textColor="@color/black"/>
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="* Número de Seguridad Social (NSS)"
-                android:textSize="24dp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:text="* Un correo electrónico"
+                android:layout_marginTop="10dp"
+                android:text="https://serviciosdigitales.imss.gob.mx/semanascotizadas-web/usuarios/IngresoAsegurado"
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
             <ImageView
-                android:layout_width="320dp"
+                android:layout_width="350dp"
                 android:layout_height="200dp"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ncsc"/>
             <TextView
-                android:layout_width="350dp"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:gravity="center"
-                android:text="Junto al rectángulo de color, copiar las letras minúsculas o mayúsculas."
+                android:text="2. Proporciona los datos solicitados:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* CURP"
                 android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Un correo electrónico"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Confirmación de correo electrónico."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* CAPTCHA (vease el glosario en caso de dudas)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="3. Descarga tu reporte de semanas cotizadas."
+                android:textSize="25dp"
                 android:textColor="@color/black"/>
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Ej. &quot;ABc&quot;. Tú escribirías &quot;A&quot; y &quot;B&quot; mayúsculas y &quot;c&quot; minúscula."
+                android:text="Presencial:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="1. Dirígete a la Subdelegación del IMSS que te corresponda."
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="2. Presenta los siguientes documentos:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Identificación oficial vigente original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* NSS (puede estar en una hoja de alta laboral o en un recibo de nómina) original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="* CURP original y copia."
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
         </LinearLayout>

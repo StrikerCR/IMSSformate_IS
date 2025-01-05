@@ -76,7 +76,7 @@ public class ConfirmaRegistro extends AppCompatActivity implements View.OnClickL
             intentito.putExtra("numFam", numFam);
             startActivity(intentito);
         } else if (view.getId() == R.id.btnEmergencia7) {
-            //Nada
+            abrirMarcador("911");
         } else if (view.getId() == R.id.btnGlosario7) {
             Intent intentito = new Intent(this, NcGlosario.class);
             startActivity(intentito);
@@ -112,6 +112,15 @@ public class ConfirmaRegistro extends AppCompatActivity implements View.OnClickL
                     Toast.makeText(this, "Error al registrar el perfil. Inténtalo de nuevo.", Toast.LENGTH_SHORT).show();
                 }
             }
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }

@@ -83,7 +83,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="SOLICITUD DE PENSIÓN"
+                android:text="Trámite de Pensión en el IMSS"
                 android:textSize="27dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"/>
@@ -93,31 +93,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Antes de hacer la solicitud verifica lo siguiente:"
-                android:textSize="24dp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="* Comprueba que tus datos personales del IMSS y el AFORE sean iguales."
-                android:textSize="24dp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="* Consulta tu número de semanas cotizadas en el IMSS"
-                android:textSize="24dp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="350dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="* Consulta la constancia de vigencia de derechos de las personas que van a ser tus beneficiarios (Esposa, hijos)"
+                android:text="El trámite de pensión en el IMSS puede realizarse por diversos motivos, como pensión por cesantía, vejez, invalidez, o viudez. A continuación, se explican los pasos y los documentos requeridos dependiendo del tipo de caso: persona casada, con hijos menores de 25 años, o por pensión de viudez."
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
             <TextView
@@ -126,22 +102,357 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Documentación para el trámite:"
+                android:text="Consideraciones:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Para cada acta solicitada en este trámite deberá presenter su validación correspondiente, dicha validación debe obtenerla e imprimirla a través de esta página: "
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="* CURP"
-                android:textSize="22dp"
+                android:layout_marginTop="10dp"
+                android:text="https://cevar.registrocivil.gob.mx/eVAR/ConsultaFolio.jsp"
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/pensionuno"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Pasos:"
+                android:textSize="25dp"
                 android:textColor="@color/black"/>
             <TextView
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="* NSS"
-                android:textSize="22dp"
+                android:layout_marginTop="10dp"
+                android:text="1. Ingresa el identificador electrónico que viene en tu acta."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <ImageView
+                android:layout_width="360dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/pensiondos"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="2. Ingresa el Código de verificación (las letras o números que aparecen abajo de este espacio)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Pensión por Cesantía o Vejez (Persona casada):"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="1. Acude al área de pensiones, debes revisar previamente el horario de atención en tu clínica correspondiente ya que deberás presentarte con los documentos correspondientes en el horario, tendrás que hacer fila así que se recomienda ir temprano para alcanzar el horario de revisión de documentos."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="2. Lleva los siguientes documentos:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Identificación oficial vigente (INE o pasaporte) original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* CURP original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Número de Seguridad Social (NSS) original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Acta de nacimiento original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Comprobante de domicilio reciente (no mayor a 3 meses) original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Estado de cuenta bancario con CLABE interbancaria a tu nombre (reciente, máximo 3 meses)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Acta de matrimonio original y copia (si aplica)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Constancia de semanas cotizadas (se obtiene del IMSS en línea o presencial)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Hoja rosa, aquella que te hayan dado en tu último empleo."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Pensión para Persona con Hijos Menores de 25 Años:"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="1. Además de los documentos anteriores, lleva lo siguiente:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Actas de nacimiento de los hijos menores de 25 años original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Constancia de estudios vigente para los hijos mayores de 16 y menores de 25 años (si aún estudian)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* CURP de cada hijo original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Identificación oficial de los hijos mayores de edad (si aplica). "
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Identificación escolar de los hijos menores de edad (si aplica)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Pensión por Viudez (por fallecimiento de un esposo/a pensionado):"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="1. Realiza el trámite en la Subdelegación del IMSS correspondiente."
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="2. Presenta los siguientes documentos:"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Identificación oficial vigente (INE o pasaporte) original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* CURP original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Acta de matrimonio original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Acta de defunción del pensionado original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Resolución de pensión o comprobante de último pago del pensionado fallecido."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Comprobante de domicilio reciente (no mayor a 3 meses) original y copia."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Estado de cuenta bancario con CLABE interbancaria a tu nombre (reciente, máximo 3 meses)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* Identificación oficial y CURP de los hijos menores de edad (si los hay)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="* En caso de concubinato, presentar pruebas de convivencia mínima de 5 años (como recibos compartidos o testigos)."
+                android:textSize="24dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Nota Importante:"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="50dp"
+                android:text="Asegúrate de que todos los documentos sean legibles y estén actualizados, con una vigencia no mayor a 3 meses. "
+                android:textSize="25dp"
                 android:textColor="@color/black"/>
         </LinearLayout>
     </ScrollView>

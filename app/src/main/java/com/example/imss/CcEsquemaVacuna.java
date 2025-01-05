@@ -16,7 +16,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class CcEsquemaVacuna extends AppCompatActivity implements View.OnClickListener {
-    Button btnMenu19, btnCuenta19, btnRetorno19, btnEscuchar19, btnEmergencia19, btnGlosario19;
+    Button btnMenu19, btnCuenta19, btnRetorno19, btnEscuchar19, btnEmergencia19, btnGlosario19, btnAgregarVacuna;
     TextView txtVVacuna1, txtVVacuna2, txtVVacuna3, txtVVacuna4, txtVVacuna5, txtVVacuna6, txtVVacuna7, txtVVacuna8;
     int usuarioId;
     @Override
@@ -42,6 +42,8 @@ public class CcEsquemaVacuna extends AppCompatActivity implements View.OnClickLi
         btnEmergencia19.setOnClickListener(this);
         btnGlosario19 = findViewById(R.id.btnGlosario19);
         btnGlosario19.setOnClickListener(this);
+        btnAgregarVacuna = findViewById(R.id.btnAgregarVacuna);
+        btnAgregarVacuna.setOnClickListener(this);
 
         txtVVacuna1 = findViewById(R.id.txtVVacuna1);
         txtVVacuna2 = findViewById(R.id.txtVVacuna2);
@@ -60,21 +62,25 @@ public class CcEsquemaVacuna extends AppCompatActivity implements View.OnClickLi
         }
         fila.close();
         basesita.close();
+
         SQLiteDatabase basesita2 = admin.getReadableDatabase();
         String query2 = "SELECT vacuna FROM Vacunas WHERE userId = ?";
         Cursor fila2 = basesita2.rawQuery(query2, new String[]{String.valueOf(usuarioId)});
         TextView[] txtsVacunas = {txtVVacuna1, txtVVacuna2, txtVVacuna3, txtVVacuna4, txtVVacuna5, txtVVacuna6, txtVVacuna7, txtVVacuna8};
-
+        for (TextView txtVacuna : txtsVacunas) {
+            txtVacuna.setVisibility(View.GONE);
+        }
         int i = 0;
         while (fila2.moveToNext() && i < txtsVacunas.length) {
             txtsVacunas[i].setText("* " + fila2.getString(0));
+            txtsVacunas[i].setVisibility(View.VISIBLE);
             i++;
         }
         fila2.close();
+        basesita2.close();
         if (i == 0) {
             Toast.makeText(this, "No se encontraron vacunas para este usuario", Toast.LENGTH_SHORT).show();
         }
-        basesita2.close();
     }
 
     @Override
@@ -94,6 +100,9 @@ public class CcEsquemaVacuna extends AppCompatActivity implements View.OnClickLi
             //NAda
         } else if (view.getId() == R.id.btnGlosario19) {
             Intent intentito = new Intent(this, CcGlosario.class);
+            startActivity(intentito);
+        } else if (view.getId() == R.id.btnAgregarVacuna) {
+            Intent intentito = new Intent(this, CcAgregaVacuna.class);
             startActivity(intentito);
         }
     }

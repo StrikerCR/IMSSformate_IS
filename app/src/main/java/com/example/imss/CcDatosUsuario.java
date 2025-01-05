@@ -88,10 +88,19 @@ public class CcDatosUsuario extends AppCompatActivity implements View.OnClickLis
             Intent intentito = new Intent(this, CcEditarDatos.class);
             startActivity(intentito);
         } else if (view.getId() == R.id.btnEmergencia11) {
-            //Nada aun
+            abrirMarcador("911");
         } else if (view.getId() == R.id.btnGlosario11) {
             Intent intentito = new Intent(this, CcGlosario.class);
             startActivity(intentito);
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }

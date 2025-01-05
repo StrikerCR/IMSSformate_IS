@@ -110,213 +110,453 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="70dp"
+                    android:orientation="vertical"
+                    android:id="@+id/layoutH1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Fecha:"
-                        android:textStyle="bold"
-                        android:textSize="18dp"
-                        android:textColor="@color/black"/>
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Fecha:"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtVFecha1"/>
+                    </LinearLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:textSize="18dp"
                         android:textColor="@color/black"
-                        android:id="@+id/txtVFecha1"/>
+                        android:id="@+id/txtVTitulo1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVDescripcion1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVSolucion1"/>
                 </LinearLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVTitulo1"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVDescripcion1"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVSolucion1"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:layout_marginTop="20dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="70dp"
+                    android:id="@+id/layoutH2">
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Fecha:"
-                        android:textStyle="bold"
-                        android:textSize="18dp"
-                        android:textColor="@color/black"/>
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Fecha:"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtVFecha2"/>
+                    </LinearLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:textSize="18dp"
                         android:textColor="@color/black"
-                        android:id="@+id/txtVFecha2"/>
+                        android:id="@+id/txtVTitulo2"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVDescripcion2"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVSolucion2"/>
                 </LinearLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVTitulo2"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVDescripcion2"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVSolucion2"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:layout_marginTop="20dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="70dp"
+                    android:id="@+id/layoutH3">
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Fecha:"
-                        android:textStyle="bold"
-                        android:textSize="18dp"
-                        android:textColor="@color/black"/>
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Fecha:"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtVFecha3"/>
+                    </LinearLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:textSize="18dp"
                         android:textColor="@color/black"
-                        android:id="@+id/txtVFecha3"/>
+                        android:id="@+id/txtVTitulo3"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVDescripcion3"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVSolucion3"/>
                 </LinearLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVTitulo3"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVDescripcion3"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVSolucion3"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:layout_marginTop="20dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="70dp"
+                    android:id="@+id/layoutH4">
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Fecha:"
-                        android:textStyle="bold"
-                        android:textSize="18dp"
-                        android:textColor="@color/black"/>
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Fecha:"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtVFecha4"/>
+                    </LinearLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:textSize="18dp"
                         android:textColor="@color/black"
-                        android:id="@+id/txtVFecha4"/>
+                        android:id="@+id/txtVTitulo4"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVDescripcion4"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVSolucion4"/>
                 </LinearLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVTitulo4"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVDescripcion4"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVSolucion4"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:layout_marginTop="20dp"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="70dp"
+                    android:id="@+id/layoutH5">
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="Fecha:"
-                        android:textStyle="bold"
-                        android:textSize="18dp"
-                        android:textColor="@color/black"/>
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Fecha:"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtVFecha5"/>
+                    </LinearLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
                         android:textSize="18dp"
                         android:textColor="@color/black"
-                        android:id="@+id/txtVFecha5"/>
+                        android:id="@+id/txtVTitulo5"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVDescripcion5"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVSolucion5"/>
                 </LinearLayout>
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVTitulo5"/>
-                <TextView
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/layoutH6">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Fecha:"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtVFecha6"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVTitulo6"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVDescripcion6"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVSolucion6"/>
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVDescripcion5"/>
-                <TextView
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/layoutH7">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Fecha:"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtVFecha7"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVTitulo7"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVDescripcion7"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVSolucion7"/>
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="18dp"
-                    android:textColor="@color/black"
-                    android:id="@+id/txtVSolucion5"/>
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/layoutH8">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Fecha:"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtVFecha8"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVTitulo8"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVDescripcion8"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVSolucion8"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/layoutH9">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Fecha:"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/txtVFecha9"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVTitulo9"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVDescripcion9"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txtVSolucion9"/>
+                </LinearLayout>
             </LinearLayout>
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#575F83"
+                android:text="Añadir un registro"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/btnAgregarRegistroH"/>
         </LinearLayout>
     </ScrollView>
     <LinearLayout

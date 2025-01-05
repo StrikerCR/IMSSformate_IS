@@ -19,7 +19,6 @@ import android.widget.Toast;
 
 public class ccfragnss extends Fragment implements View.OnClickListener {
     Button btnMenuF2N2, btnCuentaF2N2, btnRetornoF2N2, btnEscucharF2N2, btnEmergenciaF2N2, btnGlosarioF2N2;
-    TextView txtVTramite;
     int userId;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -49,8 +48,6 @@ public class ccfragnss extends Fragment implements View.OnClickListener {
         btnGlosarioF2N2 = view.findViewById(R.id.btnGlosarioF2N2);
         btnGlosarioF2N2.setOnClickListener(this);
 
-        txtVTramite = view.findViewById(R.id.txtVTramite);
-
         SQLiteDatabase basesita = admin.getReadableDatabase();
         String query = "SELECT nombre, apellidos, nss, curp, numFam1, numFam2 FROM Usuarios WHERE id = ?";
         Cursor fila = basesita.rawQuery(query, new String[]{String.valueOf(userId)});
@@ -74,10 +71,19 @@ public class ccfragnss extends Fragment implements View.OnClickListener {
         } else if (view.getId() == R.id.btnEscucharF2N2) {
             //Nada
         } else if (view.getId() == R.id.btnEmergenciaF2N2) {
-            //Nada
+            abrirMarcador("911");
         } else if (view.getId() == R.id.btnGlosarioF2N2) {
             Intent intentito = new Intent(getActivity(), CcGlosario.class);
             startActivity(intentito);
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(requireContext().getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(requireContext(), "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }

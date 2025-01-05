@@ -184,17 +184,25 @@ public class CcGlosario extends AppCompatActivity implements View.OnClickListene
         } else if (view.getId() == R.id.btnZ2) {
             scrollToSection(R.id.sectionZ2);
         } if (view.getId() == R.id.btnEmergencia22) {
-            //Nada
+            abrirMarcador("911");
         } if (view.getId() == R.id.btnGlosario22) {
             Intent intentito = new Intent(this, CcGlosario.class);
             startActivity(intentito);
         }
     }
-
     private void scrollToSection(int sectionId) {
         TextView section = findViewById(sectionId);
         if (section != null) {
             scrollView1.smoothScrollTo(0, section.getTop());
+        }
+    }
+    private void abrirMarcador(String numero) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(android.net.Uri.parse("tel:" + numero));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "No hay una aplicación para realizar llamadas", Toast.LENGTH_SHORT).show();
         }
     }
 }
